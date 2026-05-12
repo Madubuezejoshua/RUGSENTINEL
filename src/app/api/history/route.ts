@@ -11,7 +11,8 @@ export async function GET() {
       .limit(20);
 
     if (error) {
-      console.error("Supabase history error:", error);
+      // Table may not exist yet — return empty gracefully
+      console.warn("Supabase history error (table may not exist):", error.message);
       return NextResponse.json({ history: [] });
     }
 

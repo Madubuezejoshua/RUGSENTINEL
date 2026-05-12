@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: [],
   },
+  experimental: {
+    serverComponentsExternalPackages: ["groq-sdk"],
+  },
 };
 
 module.exports = nextConfig;
