@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/ui/Navbar";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
@@ -29,6 +29,15 @@ export default function ScanPage() {
   const [address, setAddress] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  // Pick up prefilled address from landing page quick-scan
+  useEffect(() => {
+    const prefill = sessionStorage.getItem("prefill_address");
+    if (prefill) {
+      setAddress(prefill);
+      sessionStorage.removeItem("prefill_address");
+    }
+  }, []);
 
   const isValidAddress = (addr: string) =>
     /^0x[a-fA-F0-9]{40}$/.test(addr.trim());
