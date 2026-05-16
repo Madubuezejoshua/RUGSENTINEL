@@ -16,7 +16,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-4">
+    <div className="min-h-screen dash-grid flex items-center justify-center px-4" style={{ background: "#0f1010" }}>
       <div className="text-center">
         <AlertTriangle className="w-16 h-16 text-danger mx-auto mb-6" />
         <h2 className="text-2xl font-bold text-white mb-3">Something went wrong</h2>

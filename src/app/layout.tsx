@@ -3,8 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "RugSentinel — Detect Rug Pulls Before They Happen",
-  description:
-    "Real-time Web3 security analytics platform. Analyze any crypto token smart contract and generate an AI-powered rug-pull risk score.",
+  description: "Real-time Web3 security analytics. Analyze any ERC-20 token and get an AI-powered rug-pull risk score.",
   keywords: ["rug pull", "crypto security", "token analysis", "Web3", "DeFi", "smart contract"],
   openGraph: {
     title: "RugSentinel",
@@ -24,7 +23,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="bg-background text-slate-200 antialiased">{children}</body>
+      <body className="text-slate-200 antialiased" style={{ background: "#0f1010" }}>{children}</body>
     </html>
   );
 }

@@ -3,7 +3,7 @@ import { Shield } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-4">
+    <div className="min-h-screen dash-grid flex items-center justify-center px-4" style={{ background: "#0f1010" }}>
       <div className="text-center">
         <Shield className="w-16 h-16 text-accent mx-auto mb-6" />
         <h1 className="text-4xl font-black text-white mb-3">404</h1>

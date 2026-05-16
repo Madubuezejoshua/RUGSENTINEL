@@ -9,59 +9,50 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0f",
-        surface: "#0f0f1a",
-        card: "#13131f",
-        border: "#1e1e2e",
-        accent: "#6366f1",
-        "accent-glow": "#818cf8",
-        safe: "#10b981",
-        medium: "#f59e0b",
-        danger: "#ef4444",
-        "safe-dim": "#064e3b",
+        /* ── Landing palette (navy/purple) ── */
+        "land-bg":      "#0a0b1a",
+        "land-surface": "#0d0f24",
+        "land-card":    "#111328",
+        "land-border":  "#1e2240",
+        "land-accent":  "#5b6ef5",
+        "land-accent2": "#7c8ff7",
+
+        /* ── Dashboard palette (dark + yellow-green) ── */
+        background: "#0f1010",
+        surface:    "#161818",
+        card:       "#1a1c1c",
+        border:     "#252828",
+        accent:     "#c8f135",   /* yellow-green */
+        "accent2":  "#a8d420",
+        muted:      "#6b7070",
+        subtle:     "#2e3030",
+
+        /* ── Semantic ── */
+        safe:         "#10b981",
+        medium:       "#f59e0b",
+        danger:       "#ef4444",
+        "safe-dim":   "#064e3b",
         "medium-dim": "#78350f",
         "danger-dim": "#7f1d1d",
-        muted: "#6b7280",
-        subtle: "#374151",
       },
       fontFamily: {
-        mono: ["'JetBrains Mono'", "'Fira Code'", "monospace"],
+        mono: ["'JetBrains Mono'", "monospace"],
         sans: ["'Inter'", "system-ui", "sans-serif"],
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "grid-pattern":
-          "linear-gradient(rgba(99,102,241,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,0.05) 1px, transparent 1px)",
-      },
-      backgroundSize: {
-        grid: "40px 40px",
-      },
       animation: {
-        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "spin-slow": "spin 8s linear infinite",
-        glow: "glow 2s ease-in-out infinite alternate",
-        "fade-in": "fadeIn 0.5s ease-in-out",
-        "slide-up": "slideUp 0.4s ease-out",
-      },
-      keyframes: {
-        glow: {
-          "0%": { boxShadow: "0 0 5px rgba(99,102,241,0.3)" },
-          "100%": { boxShadow: "0 0 20px rgba(99,102,241,0.8)" },
-        },
-        fadeIn: {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
-        slideUp: {
-          "0%": { transform: "translateY(20px)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
-        },
+        "spin-slow":   "spin 8s linear infinite",
+        "pulse-slow":  "pulse 3s ease-in-out infinite",
+        "float1":      "float1 4s ease-in-out infinite",
+        "float2":      "float2 5s ease-in-out infinite 0.8s",
+        "float3":      "float3 3.5s ease-in-out infinite 1.5s",
+        "ticker":      "ticker 28s linear infinite",
+        "fade-in":     "fadeIn 0.5s ease-out forwards",
       },
       boxShadow: {
-        glow: "0 0 20px rgba(99,102,241,0.3)",
-        "glow-safe": "0 0 20px rgba(16,185,129,0.3)",
+        "glow-blue":   "0 0 40px rgba(91,110,245,0.3)",
+        "glow-green":  "0 0 30px rgba(200,241,53,0.25)",
+        "glow-safe":   "0 0 20px rgba(16,185,129,0.3)",
         "glow-danger": "0 0 20px rgba(239,68,68,0.3)",
-        "glow-medium": "0 0 20px rgba(245,158,11,0.3)",
       },
     },
   },

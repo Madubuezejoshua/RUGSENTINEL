@@ -2,6 +2,8 @@
 
 > Detect rug pulls before they happen
 
+**GitHub:** https://github.com/Madubuezejoshua/RUGSENTINEL
+
 RugSentinel is a full-stack Web3 security analytics platform that analyzes any ERC-20 token smart contract and generates a real-time rug-pull risk score using blockchain data, market data, and AI explanations.
 
 ## Features

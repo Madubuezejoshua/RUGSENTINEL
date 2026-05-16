@@ -30,7 +30,7 @@ export default function HistoryPage() {
   );
 
   return (
-    <div className="min-h-screen bg-background grid-bg">
+    <div className="min-h-screen dash-grid" style={{ background: "#0f1010" }}>
       <Navbar />
 
       <div className="pt-28 pb-20 px-4">
